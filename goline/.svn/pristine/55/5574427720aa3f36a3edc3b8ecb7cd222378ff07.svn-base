@@ -1,0 +1,61 @@
+package trainer
+
+import (
+	"log"
+	"sync"
+	s"strings"
+	"goline/util"
+)
+
+type StreamParser struct {
+	Buf []string
+	Idx int
+	Lock sync.Mutex
+}
+
+func (sp *StreamParser) Open(instances []string) bool {
+	if len(instances) == 0{
+		log.Fatal("instances are empty.")
+		return false
+	}
+	
+	sp.Buf = instances
+	sp.Idx = 0
+	
+	return true
+}
+
+func (sp *StreamParser) Close() bool {
+	if sp.Idx != len(sp.Buf){
+		log.Fatal("close stream error.")
+		return false
+	}
+	
+	return true
+}
+
+func (sp *StreamParser) ReadSampleMultiThread() (bool, float64, util.Pvector) {
+	sp.Lock.Lock()
+	if sp.Idx >= len(sp.Buf) {	
+		sp.Lock.Unlock()
+		return false, 0., nil
+	}
+	
+	instance := s.TrimSpace(sp.Buf[sp.Idx])
+	sp.Idx++
+	sp.Lock.Unlock()
+	if len(instance) == 0 {
+		return false, 0., nil
+	}
+	
+	return util.ParseSample(instance)
+}
+
+func (sp *StreamParser) ReadLine() bool {
+	if sp.Idx != len(sp.Buf)-1{
+		log.Fatal("close stream error.")
+		return false
+	}
+	
+	return true
+}

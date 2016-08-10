@@ -1,0 +1,146 @@
+[2015-12-28 10:15:10 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:15:11 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:01 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:01 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:12 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/gosent, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:12 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:40 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/gosent, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:40 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:43 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/gosent, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:20:43 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:21:36 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/gosent, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:21:36 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:21:51 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/gosent, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:21:52 CST] [INFO] (goline/server.(*Lands).ServeHTTP:590) [ServeHTTP] Parameters:Module=/favicon.ico, Biz=, Src=hdfs, Dst=json, Train=, Test=, Predict=, Debug=off, Threshold=0.06,Alpha=0.100000, Beta=1.000000, L1=10.000000, L2=10.000000, Dropout=0.100000, Sample=1.000000, Push=10, Fetch=10, Epoch=2, Threads=8
+[2015-12-28 10:23:21 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=我套呀你爱
+[2015-12-28 10:23:21 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:23:21 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:23:21 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:24:45 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=我讨厌你
+[2015-12-28 10:24:45 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:24:45 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:24:45 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:24:53 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=我喜欢你
+[2015-12-28 10:24:53 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:24:53 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:24:53 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:25:44 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=新车方向盘总歪 求解
+[2015-12-28 10:25:44 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:25:44 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:25:44 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:02 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=都这样吗？最近杭州4S买速腾，先要由“绿途”公司代为上牌。
+[2015-12-28 10:26:02 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:02 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:02 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:10 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=我的13年速腾水泵也漏水了！
+[2015-12-28 10:26:10 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:10 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:10 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:20 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=山西临汾入手1.4高配，求最低价格。
+[2015-12-28 10:26:20 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:20 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:20 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:31 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=晚上忘了关大灯，对电瓶有害吗？
+[2015-12-28 10:26:31 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:31 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:31 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:39 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=速腾风扇问题
+[2015-12-28 10:26:39 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:39 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:39 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:26:55 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=木错吧，确实是zhangsan
+[2015-12-28 10:26:55 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:26:55 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:26:55 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:27:35 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=木错吧，确实是zhangsan
+[2015-12-28 10:27:35 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:27:35 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:27:35 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:28:12 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用
+[2015-12-28 10:28:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:28:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:28:13 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:28:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=车漆比较薄，后备箱盖缝..
+[2015-12-28 10:28:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:28:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:28:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:29:04 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=车漆比较薄，后备箱盖缝隙比较大。音响的音质不是太好，一直说这车比较省油，现在油耗有点高，希望过了磨合期能降下来<br/><br/>【空间】老公比较高大，驾驶时把座椅调后以后，后排空间比较小，我驾驶时感觉还可以，后排中间脚下突出的隆起比较大，只能坐两个人，三个人就比较拥挤，储物空间比较小。<br/>【动力】动力还行，毕竟是1.5的排量，要求没那么高，车坐满时上坡有点动力不足，不过把它调到运动模式或手动模式就好多了。油门比较轻，脚稍一踩速度就提上去了，刚开始有点不习惯
+[2015-12-28 10:29:04 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:29:04 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:29:04 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:29:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。<br/>【最不满意的一点】车漆比较薄，后备箱盖缝隙比较大。音响的音质不是太好，一直说这车比较省油，现在油耗有点高，希望过了磨合期能降下来<br/><br/>【空间】老公比较高大，驾驶时把座椅调后以后，后排空间比较小，我驾驶时感觉还可以，后排中间脚下突出的隆起比较大，只能坐两个人，三个人就比较拥挤，储物空间比较小。<br/>【动力】动力还行，毕竟是1.5的排量，要求没那么高，车坐满时上坡有点动力不足，不过把它调到运动模式或手动模式就好多了。油门比较轻，脚稍一踩速度就提上去了，刚开始有点不习惯。<br/>【操控】转向很稳，配备有车身稳定系统，车在高速公路上跑100码左右感觉还是挺稳的，定速巡航在高速上行驶能把脚解放出来，很好。<br/>【油耗】油耗有点高，工信部5.9个油，我总感觉跑不到那么低，现在基本9个多油，过了磨合期，希望油能降下来，当初买它就是冲着低油耗来的。<br/>【舒适性】座椅非常舒服，腰部支撑对经常开车的非常有帮助，长时间开车不感到累，比15款的好很多，要是座椅是电动调节的就更好了。隔音效果还可以，行驶在60码以下基本没有什么声音，后座减震有点硬。<br/>【外观】外观流线型设计，电动天窗，日间行车灯，前脸比较气派。<br/>【内饰】黑色的软内饰比较上档次，做工有点粗糙。前中控台设计加了个放手机的储物盒，比较人性化。就是前排中央扶手的后面设计的一个小空斗，不知干什么用的，放垃圾有点不太合适，不太好看。胎压监测平时没什么显示，听说只在轮胎气压低时才有提示。<br/>【性价比】总体来说，用这个价位买这样配置的车，还是非常满意的，电动天窗，无钥匙进入，一键启动，定速巡航，上坡辅助。同级别的合资车要十五万左右呢。希望在以后的操作中能和合资车媲美。<br/>【为什么最终选择这款车？】之前和老公看了很多车
+[2015-12-28 10:29:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:29:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:29:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:29:38 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。
+[2015-12-28 10:29:38 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:29:38 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:29:38 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:29:41 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。
+[2015-12-28 10:29:41 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:29:41 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:29:41 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:29:47 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键启动非常实用。
+[2015-12-28 10:29:47 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:29:47 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:29:47 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:30:02 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=老公比较高大，驾驶时把座椅调后以后，后排空间比较小，我驾驶时感觉还可以，后排中间脚下突出的隆起比较大，只能坐两个人，三个人就比较拥挤，储物空间比较小
+[2015-12-28 10:30:02 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:30:02 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:30:03 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:30:14 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=转向很稳，配备有车身稳定系统，车在高速公路上跑100码左右感觉还是挺稳的，定速巡航在高速上行驶能把脚解放出来，很好。<br/>【油耗】油耗有点高，工信部5.9个油，我总感觉跑不到那么低，现在基本9个多油，过了磨合期，希望油能降下来，当初买它就是冲着低油耗来的
+[2015-12-28 10:30:14 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:30:14 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:30:15 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:30:30 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=转向很稳，配备有车身稳定系统，车在高速公路上跑100码左右感觉还是挺稳的，定速巡航在高速上行驶能把脚解放出来，很好
+[2015-12-28 10:30:30 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:30:30 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:30:30 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:30:48 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=油耗有点高，工信部5.9个油，我总感觉跑不到那么低，现在基本9个多油，过了磨合期，希望油能降下来，当初买它就是冲着低油耗来的
+[2015-12-28 10:30:48 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:30:48 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:30:48 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:31:12 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=座椅非常舒服，腰部支撑对经常开车的非常有帮助，长时间开车不感到累，比15款的好很多，要是座椅是电动调节的就更好了。隔音效果还可以，行驶在60码以下基本没有什么声音，后座减震有点硬
+[2015-12-28 10:31:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:31:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:31:12 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:31:43 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=从郑州买了后老公把它开了回来，这几天比较忙，有很多功能还不会用，以前我开的车是手动的，目前还在熟悉阶段，还没有发现什么问题。以后有什么问题会及时反馈的。感觉电脑显示图像有点模糊。上牌比较麻烦，因为不是郑州户口，需要办暂住证，后来让4s店代办暂住证和上牌，手续费花了一千多，说需要一个月左右才能办下来。
+[2015-12-28 10:31:43 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:31:43 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:31:44 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:31:59 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=厂商指导价格
+[2015-12-28 10:31:59 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:31:59 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:31:59 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:32:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=艾瑞泽7-2015款 1.6L CVT致享版
+[2015-12-28 10:32:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:40) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:32:24 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:61) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:32:24 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:68) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:35:42 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=艾瑞泽7-2015款 1.6L CVT致享版
+[2015-12-28 10:35:42 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:35:42 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:35:42 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:36:13 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=白色的颜色一直是我的最爱，内饰我也超喜欢，无钥匙进入，一键...
+[2015-12-28 10:36:13 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:36:13 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:36:13 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:37:25 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=车漆比较薄，后备箱盖缝隙比较大。音响的音质不是..
+[2015-12-28 10:37:25 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:37:25 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:37:25 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:38:27 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=油耗太高，油耗太高，油耗太高！重要的事说三遍。主要是1.7吨的车重，油耗还真的是高，现在我百公里油耗大概在12～14个油，8毛左右每公里，作为月工资4000的我来说，还是有些偏高了。现在是磨合期，不知道做完首保后能不能有点下降，否则还真是承受不住啊！所以说车重方面看还有没有得改进，还有发动机方面，相信咱们自主品牌能够越做越好吧！不要让我们失望哦！
+[2015-12-28 10:38:27 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:38:27 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:38:27 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:38:48 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=空间很大，我1米76的身高80公斤的体重，不管是坐前排还是后排都相当宽敞，在后排翘个二郎腿都没问题！每次我开车去接我爸！他都喜欢坐后排，说是后排空间很大，坐起来安逸！哈哈
+[2015-12-28 10:38:48 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:38:48 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:38:48 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 10:40:12 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=空间很大，我1米76的身高80公斤的体重，不管是坐前排还是后排都相当宽敞，在后排翘个二郎腿都没问题！每次我开车去接我爸！他都喜欢坐后排，说是后排空间很大，坐起来安逸！哈哈
+[2015-12-28 10:40:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 10:40:12 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 10:40:12 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=
+[2015-12-28 11:19:06 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/gosent, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=我喜欢你
+[2015-12-28 11:19:06 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:38) [Lands-onlineServeHttp] Begin serving...
+[2015-12-28 11:19:06 CST] [INFO] (nlp/sentiments/server.(*Lands).onlineServeHttp:66) [Lands-onlineServeHttp] End serving.
+[2015-12-28 11:19:06 CST] [INFO] (nlp/sentiments/server.(*Lands).ServeHTTP:73) [ServeHTTP] Parameters:Module=/favicon.ico, Task=cf, NegPath=../data/negative.dat, PosPath=../data/positive.dat, Sentence=

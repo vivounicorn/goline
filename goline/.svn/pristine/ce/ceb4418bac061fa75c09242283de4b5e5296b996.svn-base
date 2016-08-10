@@ -1,0 +1,7 @@
+{
+	"DataPathBase": "../demo/",
+	"LineSpliter": ",",
+	"SampleSpliter": " ",
+	"HadoopUser": "liyiran",
+	"NameNodes": "192.168.201.51,192.168.201.52"
+}

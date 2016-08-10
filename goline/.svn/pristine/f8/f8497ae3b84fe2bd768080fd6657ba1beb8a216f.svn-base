@@ -1,0 +1,292 @@
+package trainer
+
+import (
+	"encoding/json"
+	"os"
+	"math"
+	"goline/util"
+	"goline/solver"
+	"fmt"
+	"sync"
+	"log"
+)
+
+type LockFreeFtrlTrainer struct {
+	Epoch int
+	CacheFeatureNum bool
+	Solver solver.FtrlSolver
+	Init bool
+	NumThreads int
+}
+
+func (lft *LockFreeFtrlTrainer) Initialize(
+		epoch int,
+		num_threads int,
+		cache_feature_num bool) bool {
+	lft.Epoch = epoch
+	lft.CacheFeatureNum = cache_feature_num
+	lft.NumThreads = num_threads
+
+	lft.Init = true
+	return lft.Init
+}
+
+func (lft *LockFreeFtrlTrainer) Train(
+		alpha float64,
+		beta float64,
+		l1 float64,
+		l2 float64,
+		dropout float64,
+		model_file string,
+		train_file string,
+		test_file string) bool {
+			
+	if !lft.Init {
+		return false
+	}
+
+	feat_num, line_cnt := read_problem_info(train_file, lft.CacheFeatureNum, lft.NumThreads)
+	if feat_num == 0 {
+		return false
+	}
+
+	if !lft.Solver.Initialize(alpha, beta, l1, l2, feat_num, dropout) {
+		return false
+	}
+
+	return lft.TrainImpl(model_file, train_file, line_cnt, test_file)
+}
+
+func (lft *LockFreeFtrlTrainer) TrainRestore(
+		last_model string,
+		model_file string,
+		train_file string,
+		test_file string) bool{
+	if !lft.Init { 
+		return false
+	}
+
+	feat_num, line_cnt := read_problem_info(train_file, lft.CacheFeatureNum, lft.NumThreads)
+	if feat_num == 0 {
+		return false
+	}
+
+	if !lft.Solver.Construct(last_model) {
+		return false
+	}
+
+	return lft.TrainImpl(model_file, train_file, line_cnt, test_file)
+}
+
+func (lft *LockFreeFtrlTrainer) TrainImpl(
+		model_file string,
+		train_file string,
+		line_cnt int,
+		test_file string) bool {
+	if !lft.Init {
+		return false
+	} 
+
+	fmt.Fprintf(
+		os.Stdout,
+		"params={alpha:%.2f, beta:%.2f, l1:%.2f, l2:%.2f, dropout:%.2f, epoch:%d}\n",
+		lft.Solver.Alpha,
+		lft.Solver.Beta,
+		lft.Solver.L1,
+		lft.Solver.L2,
+		lft.Solver.Dropout,
+		lft.Epoch)
+
+	predict_func := func(x util.Pvector) float64 {
+		return lft.Solver.Predict(x)
+	}
+
+	var timer util.StopWatch
+	timer.StartTimer()
+	for iter := 0; iter < lft.Epoch; iter++ {
+		var file_parser FileParser
+		file_parser.OpenFile(train_file)
+
+		count := 0
+		var loss float64 = 0
+
+		var lock sync.Mutex
+		
+		worker_func := func(i int, c *sync.WaitGroup) {
+			
+			var x util.Pvector
+			var y float64
+			local_count := 0
+			var local_loss float64= 0
+			var flag bool = false
+			for {
+				flag, y, x = file_parser.ReadSampleMultiThread()
+				if !flag {
+					break
+				}
+
+				pred := lft.Solver.Update(x, y)
+				local_loss += calc_loss(y, pred)
+				local_count++
+
+				if i == 0 && local_count % 10000 == 0 {
+					tmp_cnt := math.Min(float64(local_count * lft.NumThreads), float64(line_cnt))
+					fmt.Fprintf(
+						os.Stdout,
+						"epoch=%d processed=[%.2f%%] time=[%.2f] train-loss=[%.6f]\r",
+						iter,
+						float64(tmp_cnt * 100) / float64(line_cnt),
+						timer.StopTimer(),
+						float64(local_loss) / float64(local_count))
+				}
+			} 
+			
+			lock.Lock()
+			count += local_count
+			loss += local_loss
+			lock.Unlock()
+			defer c.Done()
+		}
+
+		util.UtilParallelRun(worker_func, lft.NumThreads)
+
+		file_parser.CloseFile()
+
+		fmt.Fprintf(
+			os.Stdout,
+			"epoch=%d processed=[%.2f%%] time=[%.2f] train-loss=[%.6f]\n",
+			iter,
+			float64(count * 100) / float64(line_cnt),
+			timer.StopTimer(),
+			float64(loss) / float64(count))
+
+		if test_file != "" {
+			eval_loss := evaluate_file(test_file, predict_func, 0)
+			fmt.Printf("validation-loss=[%f]\n", float64(eval_loss))
+		}
+	}
+
+	return lft.Solver.SaveModel(model_file)
+}
+
+func (lft *LockFreeFtrlTrainer) TrainBatch (
+		encodemodel string,
+		instances []string) bool {
+			
+	line_cnt := len(instances)
+	if line_cnt == 0 {
+		log.Fatal("No model retrained\n")
+		return false
+	}
+	
+	var fls solver.FtrlSolver 
+	err := json.Unmarshal([]byte(encodemodel), &fls)
+    if err != nil {
+        log.Fatal("restore model error:", err)
+		return false
+    }
+	
+	lft.Solver = fls
+
+	fmt.Fprintf(
+		os.Stdout,
+		"params={alpha:%.2f, beta:%.2f, l1:%.2f, l2:%.2f, dropout:%.2f, epoch:%d}\n",
+		lft.Solver.Alpha,
+		lft.Solver.Beta,
+		lft.Solver.L1,
+		lft.Solver.L2,
+		lft.Solver.Dropout,
+		lft.Epoch)
+
+	predict_func := func(x util.Pvector) float64 {
+		return lft.Solver.Predict(x)
+	}
+
+	var timer util.StopWatch
+	timer.StartTimer()
+	for iter := 0; iter < lft.Epoch; iter++ {
+		var stream_parser StreamParser
+		stream_parser.Open(instances)
+
+		count := 0
+		var loss float64 = 0
+
+		var lock sync.Mutex
+		
+		worker_func := func(i int, c *sync.WaitGroup) {
+			
+			var x util.Pvector
+			var y float64
+			local_count := 0
+			var local_loss float64= 0
+			var flag bool = false
+			for {
+				flag, y, x = stream_parser.ReadSampleMultiThread()
+				if !flag {
+					break
+				}
+
+				pred := lft.Solver.Update(x, y)
+				local_loss += calc_loss(y, pred)
+				local_count++
+
+				if i == 0 && local_count % 10000 == 0 {
+					tmp_cnt := math.Min(float64(local_count * lft.NumThreads), float64(line_cnt))
+					fmt.Fprintf(
+						os.Stdout,
+						"epoch=%d processed=[%.2f%%] time=[%.2f] train-loss=[%.6f]\r",
+						iter,
+						float64(tmp_cnt * 100) / float64(line_cnt),
+						timer.StopTimer(),
+						float64(local_loss) / float64(local_count))
+				}
+			} 
+			
+			lock.Lock()
+			count += local_count
+			loss += local_loss
+			lock.Unlock()
+			defer c.Done()
+		}
+
+		util.UtilParallelRun(worker_func, lft.NumThreads)
+
+		stream_parser.Close()
+
+		fmt.Fprintf(
+			os.Stdout,
+			"epoch=%d processed=[%.2f%%] time=[%.2f] train-loss=[%.6f]\n",
+			iter,
+			float64(count * 100) / float64(line_cnt),
+			timer.StopTimer(),
+			float64(loss) / float64(count))
+
+		eval_loss := evaluate_stream(instances, predict_func, 0)
+		fmt.Printf("validation-loss=[%f]\n", float64(eval_loss))
+	}
+
+	return true
+}
+
+
+func (lft *LockFreeFtrlTrainer) TrainOnline (encodemodel string,
+		instances []string) (string, bool) {
+	
+	if !lft.TrainBatch(encodemodel, instances) {
+		log.Println("Online learning failed")
+		return encodemodel, false
+	}
+	
+	return lft.Solver.SaveEncodeModel(), true
+}
+
+func (lft *LockFreeFtrlTrainer) TrainOnlineAndDump (encodemodel string,
+		instances []string, path string) bool {
+	
+	if !lft.TrainBatch(encodemodel, instances) {
+		log.Println("Online learning failed")
+		return false
+	}
+	
+	return lft.Solver.SaveModel(path)
+}

@@ -1,0 +1,5 @@
+{
+	"DataPathBase": "../demo/",
+	"LineSpliter": ",",
+	"SampleSpliter": " "
+}

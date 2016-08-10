@@ -1,0 +1,13 @@
+# pack-refs with: peeled fully-peeled 
+3caac15a68e61fa296987daf2f70fdcf6a2edfcd refs/remotes/origin/add-checksum-reader
+d4b64962bd2bcf90ccb3c93f97c99fd5c66cfe70 refs/remotes/origin/cmd
+74e36cca9707a451afaf73dfbdc3d40c5de9a439 refs/remotes/origin/datanode-failover
+01848e9d0fbb44c692dffa5ec8a1102113a96ff0 refs/remotes/origin/master
+4cfe8ac3eb62ccdd83f8179d0c69ac02e596c4ef refs/remotes/origin/packet-reader
+a85f95ee55d34838a0f07dcd8f33b3bbe27404c3 refs/remotes/origin/travis-containers
+ced4643f7cfe095d982f8e97736d506600aa27cb refs/remotes/origin/write-support
+7590866a0659eac8073054c50091da6cb862cdfc refs/tags/v0.1.0
+f2f22c46314e6e6e5a4a30a2df0d66895db755cd refs/tags/v0.1.1
+354bb6318dbdfd3a70697ac3db474f97dd710ce2 refs/tags/v0.1.2
+d4eafeb265720bfe8d14977e3d59ca4c379e35a3 refs/tags/v0.1.3
+6ec312402b7a8f58079c5054343ec1cf0062a715 refs/tags/v0.1.4

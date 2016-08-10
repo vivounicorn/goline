@@ -1,0 +1,16 @@
+[2016-04-07 20:44:42 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/gosimi, Task=query, Q=游戏迷, Topn=20
+[2016-04-07 20:44:42 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:39) [Lands-onlineServeHttp] Begin serving...
+[2016-04-07 20:44:42 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:71) [Lands-onlineServeHttp] End serving.
+[2016-04-07 20:44:42 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/favicon.ico, Task=retrieval, Q=, Topn=20
+[2016-04-07 20:44:50 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/gosimi, Task=query, Q=游戏迷, Topn=20
+[2016-04-07 20:44:50 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:39) [Lands-onlineServeHttp] Begin serving...
+[2016-04-07 20:44:50 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:71) [Lands-onlineServeHttp] End serving.
+[2016-04-07 20:44:50 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/favicon.ico, Task=retrieval, Q=, Topn=20
+[2016-04-07 20:44:56 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/gosimi, Task=query, Q=游戏迷, Topn=20
+[2016-04-07 20:44:56 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:39) [Lands-onlineServeHttp] Begin serving...
+[2016-04-07 20:44:56 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:71) [Lands-onlineServeHttp] End serving.
+[2016-04-07 20:44:56 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/favicon.ico, Task=retrieval, Q=, Topn=20
+[2016-04-07 20:53:39 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/gosimi, Task=query, Q=宝马, Topn=20
+[2016-04-07 20:53:39 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:39) [Lands-onlineServeHttp] Begin serving...
+[2016-04-07 20:53:39 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).onlineServeHttp:71) [Lands-onlineServeHttp] End serving.
+[2016-04-07 20:53:39 CST] [INFO] (nlp/semantic/word2vec/server.(*Lands).ServeHTTP:78) [ServeHTTP] Parameters:Module=/favicon.ico, Task=retrieval, Q=, Topn=20

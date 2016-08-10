@@ -1,0 +1,211 @@
+package util
+
+import (
+	"os"
+	"sync"
+    "runtime"
+	"math"
+	"math/rand"
+	"time"
+	s"strings"
+	"log"
+	"strconv"
+)
+
+const (
+	MaxExpNum = 50
+	MinSigmoid = 10e-15
+	MaxSigmoid = 1. - 10e-15
+	FloatEpsilon = 1.192093e-007
+)
+
+type Pair struct {
+	Index int		`json:"Index"`
+	Value float64	`json:"Value"`
+}
+
+type Pvector []Pair
+
+type DPair struct {
+	First float64
+	Second float64
+}
+
+type Dvector []DPair
+func (dv Dvector) Less(i, j int) bool {
+	if dv[i].First < dv[j].First {
+		return true
+	}
+	
+	return false
+}
+
+func (dv Dvector) Len() int {  
+    return len(dv)  
+}
+
+func (dv Dvector) Swap(i, j int) {  
+    var temp DPair = dv[i]  
+    dv[i] = dv[j]  
+    dv[j] = temp  
+}  
+
+var ch chan int
+
+func UtilParallelRun(f func(int, *sync.WaitGroup), num_threads int) {
+	wg := new(sync.WaitGroup)
+	if num_threads == 0 {
+		runtime.GOMAXPROCS(runtime.NumCPU())
+		num_threads = runtime.NumCPU()
+	}
+
+	wg.Add(num_threads)
+	for i := 0; i < num_threads; i++ {
+		go f(i, wg)
+	}
+	wg.Wait()
+}
+
+func UtilFloat64Equal(v1 float64, v2 float64) bool {
+	return math.Abs(v1 - v2) < FloatEpsilon
+}
+
+func UtilGreater(v1 float64, v2 float64) bool {
+	if UtilFloat64Equal(v1, v2) {
+		return false
+	}
+
+	return v1 > v2
+}
+
+func UtilFloat64Cmp(v1 float64, v2 float64) int {
+	if UtilFloat64Equal(v1, v2) {
+		return 0
+	} else if v1 > v2 {
+		return 1
+	} else {
+		return -1
+	}
+}
+
+func UtilFloat64GreaterEqual(v1 float64, v2 float64) bool {
+	if UtilFloat64Equal(v1, v2) {
+		return true
+	}
+
+	return v1 > v2
+}
+
+func UtilFloat64Less(v1 float64, v2 float64) bool {
+	if UtilFloat64Equal(v1, v2) {
+		return false
+	}
+
+	return v1 < v2
+}
+
+func UtilFloat64LessEqual(v1 float64, v2 float64) bool {
+	if UtilFloat64Equal(v1, v2) {
+		return true
+	}
+
+	return v1 < v2
+}
+
+func SafeExp(x float64) float64 {
+	max_exp := float64(MaxExpNum)
+	return math.Exp(math.Max(math.Min(x, max_exp), -max_exp))
+}
+
+func Sigmoid(x float64) float64 {
+	one := float64(1.0)
+	return one / (one + SafeExp(-x))
+}
+
+func UniformDistribution() float64 {
+	rand.Seed(time.Now().Unix())
+	return rand.Float64()
+}
+
+func VectorMultiplies(candidate []float64, mul float64) {
+	for i:=0; i<len(candidate); i++ {
+		candidate[i] = candidate[i] * mul
+	}
+}
+
+func MaxInt(first int, args... int) int {
+    for _ , v := range args{
+        if first < v {
+            first = v
+        }
+    }
+    return first
+}
+
+func MinInt(first int, args... int) int {
+    for _ , v := range args{
+        if first > v {
+            first = v
+        }
+    }
+    return first
+}
+
+func FileExists(filename string) (bool) {
+	var exist = true
+	if _, err := os.Stat(filename); os.IsNotExist(err) {
+  		exist = false
+ 	}
+ 	return exist
+}
+
+func ParseSample(buf string) (bool, float64, Pvector) {
+	if (len(buf) == 0) {
+		return false, 0., nil
+	}
+
+	//要求样本格式为libsvm格式，即：label dim1:val1 dim2:val2 dim3:val3
+	var res []string = s.Split(buf, " ")
+	if len(res) < 2 {
+		log.Print("sample format error." + buf)
+		return false, 0, nil
+	}	
+	
+	y,err := strconv.ParseFloat(res[0], 64)
+	if err != nil {
+        log.Print("parse sample error:", err)
+		return false, 0., nil
+    }
+	
+	if (y < 0.) {
+		y = 0.
+	}
+	
+	var x Pvector
+	//偏置
+	x = append(x, Pair{0, 1.})
+	
+	for i:=1; i<len(res); i++{
+		var sp []string = s.Split(res[i],":")
+		if len(sp) != 2 {
+			log.Println("sample format error [idx:val]." + res[i])
+			continue
+		}
+		
+		ix, err := strconv.Atoi(sp[0])
+		if err != nil {
+        	log.Println("parse sample index error:", err)
+			continue
+    	}
+		vl,err := strconv.ParseFloat(sp[1], 64)
+		if err != nil {
+        	log.Println("parse sample value error:", err)
+			continue
+    	}		
+		
+		var instance Pair = Pair{ix, vl}
+		x = append(x, instance)		
+	}
+
+	return true, y, x
+}

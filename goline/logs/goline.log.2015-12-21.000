@@ -1,0 +1,8 @@
+[2015-12-21 13:27:56 CST] [INFO] (goline/server.(*Lands).offlineServeHttp:285) [Lands-offlineServeHttp] Begin offline learning...
+[2015-12-21 13:27:56 CST] [INFO] (goline/server.(*Lands).offlineServeHttp:310) [Lands-offlineServeHttp] Mount training data.
+[2015-12-21 13:27:56 CST] [EROR] (goline/server.(*Lands).offlineServeHttp:350) [Lands-offlineServeHttp] Training data source path error.
+[2015-12-21 13:27:56 CST] [EROR] (goline/server.(*Lands).ServeHTTP:583) [Lands-offlineServeHttp] Training data source path error.
+[2015-12-21 13:28:00 CST] [INFO] (goline/server.(*Lands).offlineServeHttp:285) [Lands-offlineServeHttp] Begin offline learning...
+[2015-12-21 13:28:00 CST] [INFO] (goline/server.(*Lands).offlineServeHttp:310) [Lands-offlineServeHttp] Mount training data.
+[2015-12-21 13:28:00 CST] [EROR] (goline/server.(*Lands).offlineServeHttp:350) [Lands-offlineServeHttp] Training data source path error.
+[2015-12-21 13:28:00 CST] [EROR] (goline/server.(*Lands).ServeHTTP:583) [Lands-offlineServeHttp] Training data source path error.

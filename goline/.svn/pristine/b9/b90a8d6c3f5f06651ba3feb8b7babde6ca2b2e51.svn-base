@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+)
+
+import(
+	"net/http"
+	"goline/server"
+	"time"
+)
+
+func main(){
+
+	plugin := &server.Lands{}
+	err := plugin.Initialize("..\\conf\\settings.conf")
+	if err != nil {
+		fmt.Println(err)
+	}
+	server := http.Server{
+        Addr:        "127.0.0.1:8080",
+        Handler:     plugin,
+        ReadTimeout: 6 * time.Second,
+
+    }
+
+    server.ListenAndServe()
+}

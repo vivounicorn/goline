@@ -1,0 +1,82 @@
+﻿
+ftrl-proximal是一个online learning工具库，其实现基于以下两篇论文：
+* 《Ad Click Prediction: a View from the Trenches》 from Brendan McMahan...(google)
+* 《Large Scale Distributed Deep Networks》 from Jeffrey Dean...(google)
+
+Features
+----------
+
+* 支持Libsvm格式
+* 支持较大规模训练数据
+* 支持原生ftrl-proximal算法
+* 支持多核多线程的ftrl-proximal算法
+* 支持基于parameter server的快速ftrl-proximal算法
+
+Usage
+----------
+* 支持基于parameter server的快速ftrl-proximal算法(推荐)
+
+初始化参数说明:
+	epoch 				迭代轮数
+	num_threads 		线程数(设置为0默认获取CPU核心数)
+	cache_feature_num 	是否缓存样本统计信息
+	burn_in 			第一次迭代时的模型权重预热
+	push_step 			训练多少步后向参数服务器推送更新梯度值
+	fetch_step int		训练多少步后从参数服务器获取更新梯度值
+
+训练参数说明：
+	alpha 				权重更新步长的参数，由样本数和特征数决定(用于确定更新权重步长)
+	beta 				权重更新步长的参数，一般设置为1即可(用于确定更新权重步长)
+	l1					L1正则化系数(保持模型稀疏性及提高泛化性)
+	l2					L2正则化系数(保持模型参数稳定性及提高泛化性)
+	dropout				设置放弃更新某个特征权重的概率，取值为0~1之间(提高泛化性)
+	model_file			训练结束后模型文件存储路径
+	train_file			训练文件存储路径
+	test_file			测试文件存储路径
+
+示例:
+	var fft trainer.FastFtrlTrainer
+	fft.Initialize(5, 8, false, 1, 10, 10)
+	fft.Train(0.1,1,10,10,0.1,"..\\demo\\t.model",
+	"..\\demo\\train.dat",
+	"..\\demo\\test.dat")
+	
+	predictor.Run(3,[]string{"..\\demo\\using.dat",
+	"..\\demo\\t.model",
+	"..\\demo\\res.dat",
+	"0.06"})
+	
+* 支持原生ftrl-proximal算法
+	var ft trainer.FtrlTrainer
+	ft.Initialize(5, false)
+	ft.Train(0.1,1,10,10,0.1,"..\\demo\\t.model",
+	"..\\demo\\train.dat",
+	"..\\demo\\test.dat")
+	
+	predictor.Run(3,[]string{"..\\demo\\using.dat",
+	"..\\demo\\t.model",
+	"..\\demo\\res.dat",
+	"0.06"})
+
+* 支持多核多线程的ftrl-proximal算法
+	var lft trainer.LockFreeFtrlTrainer
+	lft.Initialize(5, 8, false)
+	lft.Train(0.1,1,10,10,0.1,"..\\demo\\t.model",
+	"..\\demo\\train.dat",
+	"..\\demo\\test.dat")
+	
+	predictor.Run(3,[]string{"..\\demo\\using.dat",
+	"..\\demo\\t.model",
+	"..\\demo\\res.dat",
+	"0.06"})
+
+Future Features
+----------
+
+* 添加支持Single样本或batch样本的online learning的接口
+* 多线程并发性能优化
+
+License
+----------
+
+© Contributors, 2015. Licensed under an Apache-2 license.
